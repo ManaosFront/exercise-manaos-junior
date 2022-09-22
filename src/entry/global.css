@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../static/fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+:root {
+  --defaultFont: #11113c; /* russian violet; */
+  --primary: #5f7af1; /* blue crayola */
+  --secondary: #ea517f; /* blush */
+  --tertiary: #fe7b70; /* salmon */
+  --success: #13a129; /* slimy green */
+  --warning: #f97a14; /* safety orange */
+  --danger: #e20606; /* rosso corsa */
+  --info: #5f7af1; /* blue crayola */
+
+  --black: #000; /* black */
+  --grey59: #979494; /* spanish grey */
+  --grey82: #d2d2d2; /* light grey */
+  --grey85: #d8d8d8; /* gainsboro */
+  --grey93: #eeeeee; /* cultured */
+  --grey99: #fcfcfe; /* whiteless */
+  --white: #fff; /* white */
+
+  --gradientPink: linear-gradient(
+    180deg,
+    var(--tertiary) 0%,
+    var(--secondary) 100%
+  );
+  --gradientGrey: linear-gradient(180deg, var(--grey99) 0%, var(--grey93) 100%);
+}
+
+body {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--gradientGrey) no-repeat;
+}
+
+:root,
+html,
+body,
+#root,
+.modal {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: clip;
+  overflow-y: auto;
+}

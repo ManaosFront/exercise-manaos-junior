@@ -31,14 +31,14 @@ As a beginner, you have to:
 - Go to branch `stable`
 - Create and go to your branch `candidate-{names}-{firstnames}` in spinal-lowercase only.
 - Develop the app:
-  1. Create a route `/documents` to a new component `DocumentsView`.
-  2. Use AG-Grid library to setup a table
-  3. Use MaterialUI to create the button "Export Table" and the search input.
-  4. Use CSS-in-JS to create CSS classes (example in `/src/sample/Example.tsx` and `/src/sample/Example.style.ts`).
-  5. Create the Document page following screenshot above.
-  6. Call `api.getDocuments` to get data and display it in AG-Grid.
-- Take a screenshot of your `/documents` page in your localhost server.
-- Send code and commits in a new pull request through branch you setup with your screenshot in description.
+  1. [X] Create a route `/documents` to a new component `DocumentsView`.
+  2. [X] Use AG-Grid library to setup a table
+  3. [X] Use MaterialUI to create the button "Export Table" and the search input.
+  4. [X] Use CSS-in-JS to create CSS classes (example in `/src/sample/Example.tsx` and `/src/sample/Example.style.ts`).
+  5. [X] Create the Document page following screenshot above.
+  6. [X] Call `api.getDocuments` to get data and display it in AG-Grid.
+- [X] Take a screenshot of your `/documents` page in your localhost server.
+- [] Send code and commits in a new pull request through branch you setup with your screenshot in description.
 
 #
 

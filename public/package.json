@@ -1,0 +1,64 @@
+{
+	"name": "test",
+	"version": "2.0.0",
+	"description": "test",
+	"dependencies": {
+		"@emotion/react": "^11.10.4",
+		"@emotion/styled": "^11.10.4",
+		"@fontsource/rubik": "^4.5.11",
+		"@mui/icons-material": "^5.10.6",
+		"@mui/material": "^5.10.8",
+		"ag-grid-community": "^28.2.0",
+		"ag-grid-react": "^28.2.0",
+		"hamburger-react": "^2.4.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.4.2",
+		"react-scripts": "5.0.1",
+		"typescript": "^4.0.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+		"lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^14.4.3",
+		"@types/jest": "^29.1.2",
+		"@types/material-ui": "^0.21.8",
+		"@types/node": "^18.8.3",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"@types/react-router-dom": "^5.1.6",
+		"@typescript-eslint/parser": "^5.39.0",
+		"eslint": "^8.25.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"prettier": "^2.3.2"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

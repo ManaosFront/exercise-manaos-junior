@@ -35,7 +35,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--gradientGrey) no-repeat;
 }
 
 :root,
@@ -55,4 +54,8 @@ body,
   height: 100vh;
   overflow-x: clip;
   overflow-y: auto;
+}
+
+.ag-theme-alpine {
+  flex: 1 1 auto;
 }

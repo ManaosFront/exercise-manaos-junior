@@ -8,24 +8,37 @@ export type RouteComponentProps = {
 
 export type RouteProps = Omit<PathRouteProps, "id"> & {
   id: string;
+  layout?: React.FC<RouteComponentProps>;
   component: React.FC<RouteComponentProps>;
+  icon?: React.FC;
+  title?: string;
 };
 
 export type RouterProps = {
-  routes: RouteProps[];
+  routes: RouteProps[] | readonly RouteProps[];
 };
 
 export const Router: React.FC<RouterProps> = ({ routes }) => (
   <BrowserRouter>
     <Routes>
-      {routes.map(({ component, id, children, ...rest }) => (
-        <Route
-          key={id}
-          id={id}
-          element={component({ "data-testid": id, children })}
-          {...rest}
-        />
-      ))}
+      {routes.map(
+        ({ layout: Layout, component: Component, id, children, ...rest }) => (
+          <Route
+            key={id}
+            id={id}
+            element={
+              Layout ? (
+                <Layout>
+                  <Component data-testid={id}>{children}</Component>
+                </Layout>
+              ) : (
+                <Component data-testid={id}>{children}</Component>
+              )
+            }
+            {...rest}
+          />
+        )
+      )}
     </Routes>
   </BrowserRouter>
 );

@@ -4,7 +4,7 @@ export namespace DocumentsApi {
     fileName: string; // "Test01",
     uploadedBy: string; // "Adrien",
     uploadedDate: string; // "2022-03-31",
-    status: string; // "OK",
+    status: "OK" | "FAILED"; // "OK",
   };
 
   const documentsStub: Document[] = [
@@ -40,9 +40,13 @@ export namespace DocumentsApi {
 
   export const buildApi = () => ({
     getDocuments: () =>
-      new Promise<Document[]>((resolve) => {
+      new Promise<Document[]>((resolve, reject) => {
         setTimeout(() => {
-          resolve(documentsStub);
+          if (Math.random() > 0.8) {
+            resolve(documentsStub);
+          } else {
+            reject(new Error("Server error"));
+          }
         }, 2000);
       }),
   });

@@ -1,4 +1,5 @@
 import { makeStyles } from "../../common/makeStyles";
+import { colors } from "../../common/colors";
 
 export const examplePageStyles = makeStyles({
   examplePage: {
@@ -8,8 +9,8 @@ export const examplePageStyles = makeStyles({
     alignItems: "center",
     width: "100%",
     minHeight: "100%",
-    background: "var(--gradientPink)",
-    color: "var(--grey93)",
+    background: colors.gradientPink,
+    color: colors.grey93,
   },
   logo: {
     borderRadius: "15%",
